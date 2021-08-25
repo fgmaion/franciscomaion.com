@@ -1,0 +1,24 @@
+<footer class="footer fixed-bottom bg-dark">
+    <div class="row footer-text">
+        <div class="col-12 col-md text-center text-md left nav-link text-light">
+            &copy; {{ replace .Site.Params.Copyright "{year}" now.Year }}
+        </div>
+    </div>
+    {{ $jsBundle := slice }}
+    {{ $jsBundle := $jsBundle | append (resources.Get "vendor/jquery/jquery.min.js") }}
+    {{ $jsBundle := $jsBundle | append (resources.Get "vendor/bootstrap/js/bootstrap.bundle.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/jquery.easing/jquery.easing.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/jquery.appear/jquery.appear.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/imagesloaded/imagesloaded.pkgd.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/jquery.countTo/jquery.countTo.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/parallaxie/parallaxie.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/typed/typed.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/owl.carousel/owl.carousel.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/isotope/isotope.pkgd.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "vendor/magnific-popup/jquery.magnific-popup.min.js") }}
+    {{ $jsBundle :=  $jsBundle | append (resources.Get "js/theme.js") }}
+
+    {{ $js := $jsBundle | resources.Concat "js/main.js" | resources.Minify }}
+
+    <script src="{{ $js.RelPermalink | absURL }}"></script>
+</footer>

@@ -1,0 +1,4 @@
+/public/
+/resources/_gen/
+*.code-workspace
+/node_modules/

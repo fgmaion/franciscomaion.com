@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/favicon.png" rel="icon" />
+    <title>{{ .Title }}</title>
+    <meta name="description" 
+        content="{{ .Site.Params.Description }}" />
+    <meta name="author" content="{{ .Site.Author }}">
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    {{ $options := (dict "targetPath" "css/font.css" "outputStyle" "compressed") }}
+
+    {{ $fontawesome := resources.Get "vendor/font-awesome/scss/fontawesome.scss" | toCSS  $options }}
+    <link rel="stylesheet" href="{{ $fontawesome.RelPermalink | absURL }}" media="screen">
+
+    {{ $cssBundle := slice }}
+    {{ $cssBundle := $cssBundle | append (resources.Get "vendor/bootstrap/css/bootstrap.min.css") }}
+    {{ $cssBundle := $cssBundle | append (resources.Get "vendor/owl.carousel/assets/owl.carousel.min.css") }}
+    {{ $cssBundle := $cssBundle | append (resources.Get "vendor/magnific-popup/magnific-popup.min.css") }}
+    {{ $css := $cssBundle | resources.Concat "css/bundle.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink | absURL }}" media="screen">
+
+    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed") }}
+
+    {{ $style := resources.Get "sass/stylesheet.scss" | toCSS  $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink | absURL }}" media="screen">
+
+
+</head>

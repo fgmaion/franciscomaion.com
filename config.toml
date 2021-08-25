@@ -1,0 +1,30 @@
+######################## default configuration ####################
+baseURL = "https://franciscomaion.com"
+title = "Francisco Maion"
+theme = "research"
+languageCode = 'en-us'
+relativeURLS = true
+
+[params]
+author = "Francisco Maion"
+description = "Francisco Maion"
+copyright = "{year} Francico Maion - All rights reserved."
+
+[[params.social]]
+title = "github"
+icon = "fa-github"
+link = "#"
+target = "_blank"
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+sectionPagesMenu = "main"
+
+[menu]
+[[menu.main]]
+identifier = "research"
+title = "Research"
+url = "/research/"
+weight = 200

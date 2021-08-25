@@ -1,0 +1,10 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+.bg-secondary {
+    background-color: rgba($secondary, 0.5);
+}
+
+.text-secondary {
+    color: rgba($secondary, 0.7);
+}

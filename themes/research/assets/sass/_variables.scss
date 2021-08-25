@@ -1,0 +1,332 @@
+/*===========================================================
+
+   Template Name: Simone - Personal Portfolio Template
+   Author: Harnish Design
+   Template URL: http://demo.harnishdesign.net/html/simone
+   Author URL: https://themeforest.net/user/harnishdesign
+   File Description : Main css file of the template
+	
+=================================================
+  Table of Contents
+=================================================
+
+	1. Basic
+	2. Helpers Classes
+	3. Layouts
+	4. Header
+		4.1 Navigation
+		4.2 Secondary Nav
+		4.3 Page Header
+	5 Elements
+		5.1 Featured Box
+		5.2 Team
+		5.3 Accordion & Toggle
+		5.4 Nav
+		5.5 Tabs
+		5.6 Hero Background
+		5.7 Owl Carousel
+		5.8 Brands Grid
+		5.9 Portfolio
+		5.10 List Style
+	6 Footer
+		6.1 Social Icons
+		6.2 Back to Top
+	7 Extra
+
+=======================================================*/
+$white:    #f5f2f7;
+$gray-100: #e6e2e6;
+$gray-200: #cbc7c9;
+$gray-300: #b3aeaf;
+$gray-400: #9c9695;
+$gray-500: #857e7c;
+$gray-600: #6e6763;
+$gray-700: #5a524d;
+$gray-800: #483f39;
+$gray-900: #372e26;
+$black:    #1e140a;
+
+$blue:    #3d488f;
+$indigo:  #300066;
+$purple:  #b47eb3;
+$pink:    #ff47ce;
+$red:     #974735;
+$orange:  #be6346;
+$yellow:  #d7ab33;
+$green:   #30b066; 
+$teal:    #44daa3; 
+$cyan:    #6ca4ba;
+
+//---------- Fonts ----------//
+
+$body-font: 'Poppins', sans-serif;
+
+$fa-font-path: '../vendor/font-awesome/webfonts';
+
+//---------- Base Colors ----------//
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$primary-color: 			$orange;
+$primary-color-hover: 		darken($primary-color, 7%);
+$secondary-color: 			$purple;
+
+$body-bg:					$light;
+$text-color:				$gray-700;
+$title-color:     			$primary-color;
+
+
+//---------- Social Icons Colors ----------//
+
+$facebook:                 #3B5998;
+$twitter:                  #00ACEE;
+$google:                   #DD4B39;
+$linkedin:                 #0E76A8;
+$youtube:                  #C4302B;
+$instagram:                #3F729B;
+$dribbble: 				   #ea4c89;
+$github: 				   #333333;
+$behance: 				   #053eff;
+$reddit:                   #C6C6C6;
+$pinterest: 			   #cc2127;
+$vk:                       #2B587A;
+$rss:                      #EE802F;
+$skype:                    #00AFF0;
+$xing:                     #126567;
+$tumblr:                   #34526F;
+$email:                    #6567A5;
+$delicious:                #205CC0;
+$stumbleupon:              #F74425;
+$digg:                     #191919;
+$blogger:                  #FC4F08;
+$flickr:                   #FF0084;
+$vimeo:                    #86C9EF;
+$yahoo:                    #720E9E;
+$appstore:                 #000;
+
+::selection {
+    background: $primary-color;
+}
+
+a, a:focus {
+  color: $primary-color;
+}
+a:hover, a:active {
+    color: $primary-color-hover;
+}
+
+.primary-menu {
+  ul.navbar-nav > li {
+    &:hover > a:not(.btn), & > a.active:not(.btn) {
+      color: $primary-color;
+    }
+	&.dropdown {
+      .dropdown-menu li {
+        &:hover > a:not(.btn) {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &.navbar-line-under-text ul.navbar-nav > li {
+	> a:not(.btn):after {
+		border-color: $primary-color;
+		}
+	}
+}
+
+/*== Secondary Nav ==*/
+.secondary-nav.nav {
+  &.alternate {
+    .nav-item .nav-link.active {
+      border-color: $primary-color;
+    }
+  }
+}
+
+/* Page Header */
+.page-header {
+  &.page-header-text-dark {
+    .breadcrumb > li {
+      a {
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* Accordion & Toggle */
+.accordion {
+  &:not(.accordion-alternate) .card-header a {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+/* Nav */
+.nav:not(.nav-pills) .nav-item .nav-link.active, .nav:not(.nav-pills) .nav-item .nav-link:hover{color: $primary-color;}
+.nav-tabs {
+  .nav-item .nav-link {
+    &.active {
+      &:after {
+        background-color: $primary-color;
+      }
+      color: #0c2f55;
+    }
+	&:not(.active):hover {
+      color: $primary-color;
+    }
+  }
+  &.flex-column {
+    .nav-item {
+      .nav-link.active {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.nav-pills .nav-link:not(.active):hover{color: $primary-color;}
+
+/* Brands Grid */
+.brands-grid {
+  > .row > div a {
+    &:hover {
+	  color:$primary-color;
+    }
+  }
+}
+
+#footer {
+  .nav {
+    .nav-item {
+      .nav-link {
+        &:focus {
+          color: $primary-color;
+        }
+      }
+    }
+    .nav-link:hover {
+      color: $primary-color;
+    }
+  }
+  .footer-copyright {
+    .nav {
+      .nav-link:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* Back to Top */
+#back-to-top {
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+/* Extras */
+.bg-primary{
+	background-color: $primary-color !important;
+}
+.text-primary, .btn-light, .btn-outline-light:hover, .btn-link, .btn-outline-light:not(:disabled):not(.disabled).active, .btn-outline-light:not(:disabled):not(.disabled):active {
+	color: $primary-color !important;
+}
+.btn-link:hover {
+	color: $primary-color-hover !important;
+}
+
+.text-muted{
+	color:#8e9a9d!important;
+}
+.text-light{
+	color:#dee3e4!important;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+	background-color: $primary-color-hover!important;
+}
+.border-primary {
+	border-color: $primary-color !important;
+}
+
+.btn-primary{
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $primary-color-hover;
+    border-color: $primary-color-hover;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active{
+  background-color: $primary-color-hover;
+  border-color: $primary-color-hover;
+  
+}
+
+.btn-primary.focus, .btn-primary:focus{
+	background-color: $primary-color-hover;
+    border-color: $primary-color-hover;
+}
+
+.btn-outline-primary, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active{
+  color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+	color: #fff;
+  }
+}
+
+.progress-bar,
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .dropdown-item.active, .dropdown-item:active{
+	background-color: $primary-color;
+}
+.page-item.active .page-link,
+.custom-radio .custom-control-input:checked ~ .custom-control-label:before,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before,
+.custom-control-input:checked ~ .custom-control-label:before{
+	background-color: $primary-color;
+	border-color: $primary-color;
+}
+.list-group-item.active{
+	background-color: $primary-color;
+	border-color: $primary-color;
+}
+.page-link {
+  color: $primary-color;
+  &:hover {
+    color: $primary-color-hover;
+  }
+}
+
+.owl-theme {
+  &.single-slideshow .owl-dots {
+	.owl-dot {
+	&.active span, &:hover span {
+		border-color: $primary-color;
+	  }
+	&.active span:after, &:hover span:after {
+		background-color: $primary-color;
+	  }
+	}
+  }
+  .owl-dots .owl-dot {
+	&.active span, &:hover span {
+		border-color: $primary-color;
+	  }
+	&.active span:after, &:hover span:after {
+		background-color: $primary-color;
+	  }
+  }
+  &.dots-light .owl-dots .owl-dot {
+	&.active span:after, &:hover span:after {
+		background-color: $primary-color;
+	  }
+  }
+}
