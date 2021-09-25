@@ -13,7 +13,13 @@ copyright = "{year} Francico Maion - All rights reserved."
 [[params.social]]
 title = "github"
 icon = "fa-github"
-link = "#"
+link = "https://github.com/fgmaion"
+target = "_blank"
+
+[[params.social]]
+title = "researchgate"
+icon = "fa-researchgate"
+link = "https://www.researchgate.net/profile/Francisco-Maion"
 target = "_blank"
 
 [frontmatter]

@@ -11,12 +11,6 @@
         <!-- Heading end-->
         <div class="row gy-5">
             <div class="col-auto">
-                Categories: {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-                <a class="badge rounded-pill bg-primary nav-link" href="{{.Permalink}}">{{.Title}}</a>&nbsp;
-                {{end}}
-
-            </div>
-            <div class="col-auto">
                 Tags: {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
                 <a class="badge rounded-pill bg-success nav-link" href="{{.Permalink}}">{{.Title}}</a>&nbsp;
                 {{end}}
@@ -46,10 +40,6 @@
                     {{ .Lastmod.Format "Jan 2, 2006" }}
                 </time>
                 <br />
-                Categories: {{ range .Params.categories }}
-                <a class="text-decoration-none nav-item px-1" href="/categories/{{ . | urlize}}">{{ . }}</a>
-
-                {{end}}
                 Tags:{{ range .Params.tags }}
                 <a class="text-decoration-none nav-item px-1" href="/tags/{{ . | urlize}}">{{ . }}</a>
 
