@@ -2,3 +2,5 @@
 /resources/_gen/
 *.code-workspace
 /node_modules/
+
+hugo.exe
