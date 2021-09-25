@@ -3,7 +3,8 @@ title: "Masters"
 draft: false
 tags: 
 - computational cosmology
-- 
+- Large-scale Structure
+- Physics
 menu:
     main:
         identifier: "Masters"
@@ -11,11 +12,7 @@ menu:
         parent: "research"
 ---
 
-# Fixed and Paired Simulations
-
-In 2020 I did a research internship with Prof. Raúl Angulo at the DIPC, during which I managed to explain qualitatively why the variance of some statistical quantities derived from fixed-and-paired LSS simulations are reduced by this procedure, while others are not. Furthermore, I was able to derive mathematical expressions capable of predicting the value of these variances in the linear regime; these quantities were unknown prior to this work, and understanding their behaviour will help plan future simulation designed to reach a certain precision in these statistical quantities.
-
-# Master’s Dissertation
+# Dissertation
 
 During my masters I worked with spectroscopic surveys, mainly to develop an analysis pipeline inside the research group led by Prof. Raul Abramo. I implemented recipes to estimate the power spectra using optimal weights and correct these estimates for systematic distortions. I also wrote a code to compute the window function of the survey and incorporate its effects into the theoretical model for the power spectrum, in order to obtain unbiased constraints on cosmological parameters. I applied this pipeline to the public dataset of the VIPERS survey, obtaining constraints on the matter growth-rate at redshifts z=0.55, 0.7 and 0.9, which are shown in the figures below.
 
