@@ -1,6 +1,6 @@
 {{ define "main" }}
 
- <section id="about" class="section bg-light">
+ <section id="{{ .Title }}" class="section bg-light">
       <div class="container px-lg-5">
         <!-- Heading -->
         <div class="position-relative d-flex text-center mb-5">
@@ -9,9 +9,13 @@
         </div>
         <!-- Heading end-->
         <div class="row gy-5">
-          <div class="col">
-            {{ .Content }}
-          </div>
+          {{ $cols := split .Content "{split}" }}
+          {{ $len := math.Floor (div 12 (len $cols)) }}
+          {{ range $cols }}
+            <div class="col-md-{{ $len }} col-sm-12">
+              {{ . | safeHTML }}
+            </div>
+          {{ end }}
         </div>
       </div>
 </section>

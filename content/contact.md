@@ -7,9 +7,10 @@ menu:
         weight: 300
         parent: ""
 ---
+## Information
+You can feel free to contact me via e-mail at fgmaion@gmail.com
 
-# email me
+### Contact form
+If you want, you can use **this** form to send me a message directly from here!
 
-fgmaion@gmail.com
-
-tem como colocar um formulario de contato igual da boryana? ele nao tem outras infos de contato la e achei meio vazio/brega esse role so com o email
+{{< form message="Tell me your message..." submit="Send" >}}
