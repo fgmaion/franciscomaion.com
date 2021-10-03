@@ -1,14 +1,16 @@
 ---
+title: "Internship"
 draft: false
+date: "2021-10-03"
 tags: 
 - Lagrangian Perturbation-Theory
 - Bias Expansion
 - Hybrid-EFT models 
 - EUCLID
+weight: 102
 menu:
     main:
-        identifier: "pairedsimulations"
-        weight: 1000
+        identifier: "internship"
         parent: "research"
 ---
 

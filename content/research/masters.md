@@ -1,14 +1,15 @@
 ---
+title: "Masters"
 draft: false
-featuredImage: "/img/grafico_1.png"
+date: "2021-09-03"
 tags: 
 - Redshift-Space Distortions
 - Spectroscopic Surveys
 - Window Function
+weight: 101
 menu:
     main:
-        identifier: "Masters"
-        weight: 101
+        identifier: "masters"
         parent: "research"
 ---
 
