@@ -21,4 +21,5 @@
     {{ $js := $jsBundle | resources.Concat "js/main.js" | resources.Minify }}
 
     <script src="{{ $js.RelPermalink | absURL }}"></script>
+    <script id="google-recaptcha-v3" src="https://www.google.com/recaptcha/api.js?render=6Le4h6ccAAAAACzcAHXK0IMju_Y70_oSpqhQZ_5i"></script>
 </footer>
