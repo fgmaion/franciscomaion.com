@@ -27,8 +27,8 @@ $toEmail = "fgmaion@gmail.com"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "no-reply@franciscomaion.com";  // Replace Company's Email Address (preferably currently used Domain Name)
-$fromName = "Francisco Maion"; // Replace Company Name
+$fromEmail = "contact@franciscomaion.com";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromName = "Francisco Maion's Website"; // Replace Company Name
 
 
 /* --------------------------------------------
@@ -36,7 +36,7 @@ $fromName = "Francisco Maion"; // Replace Company Name
   --------------------------------------------- */
 
 // Add this only if you want to use Google reCaptcha with your Contact Forms.
-$recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Your Google reCaptcha Secret
+$recaptcha_secret = getenv("RECAPTCHA_SECRET"); // Your Google reCaptcha Secret
 
 
 /* --------------------------------------------
@@ -56,8 +56,8 @@ $mail = new PHPMailer(true);
 $mail->SMTPDebug = 0;
 $mail->Host = 'ssl://smtp.dreamhost.com';
 $mail->SMTPAuth = true;
-$mail->Username = "fran@franciscomaion.com";
-$mail->Password = "";
+$mail->Username = "contact@franciscomaion.com";
+$mail->Password = getenv("SMTP_PASSWD");
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 
