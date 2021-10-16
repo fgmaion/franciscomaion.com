@@ -6,6 +6,7 @@ menu:
         identifier: "contact"
         weight: 300
         parent: ""
+outputs: PHP
 ---
 ## Information
 You can feel free to contact me via e-mail at fgmaion@gmail.com
