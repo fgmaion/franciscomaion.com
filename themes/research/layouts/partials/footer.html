@@ -4,6 +4,7 @@
             &copy; {{ replace .Site.Params.Copyright "{year}" now.Year }}
         </div>
     </div>
+    
     {{ $jsBundle := slice }}
     {{ $jsBundle := $jsBundle | append (resources.Get "vendor/jquery/jquery.min.js") }}
     {{ $jsBundle := $jsBundle | append (resources.Get "vendor/bootstrap/js/bootstrap.bundle.min.js") }}
@@ -21,5 +22,12 @@
     {{ $js := $jsBundle | resources.Concat "js/main.js" | resources.Minify }}
 
     <script src="{{ $js.RelPermalink | absURL }}"></script>
+    
+    {{ if ($.Scratch.Get "photoswipeloaded") }}
+        <script src="/js/load-photoswipe.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+    {{ end }}
+
     <script id="google-recaptcha-v3" src="https://www.google.com/recaptcha/api.js?render=6Le4h6ccAAAAACzcAHXK0IMju_Y70_oSpqhQZ_5i"></script>
 </footer>

@@ -14,9 +14,10 @@ Hello, I’m Francisco, a brazilian cosmologist currently doing my PhD at the Do
 
 I also love travelling to places of natural beauty. 
 
-{{< figure src="/img/canions.jpg" class="img-fluid" caption=" Me and my girlfriend inside canyon Itaimbezinho in southern Brazil." width="{{$preview.Width}}" >}}
+{{< load-photoswipe >}}
+{{< figure src="/img/canions.jpg" class="img-fluid" caption=" Me and my girlfriend inside canyon Itaimbezinho in southern Brazil." >}}
 
-{{< figure src="/img/chapada.jpeg" class="img-fluid" caption=" Photograph taken when I visited Chapada dos Veadeiros in central Brazil." width="{{$preview.Width}}" >}}
+{{< figure src="/img/chapada.jpeg" class="img-fluid" caption=" Photograph taken when I visited Chapada dos Veadeiros in central Brazil." >}}
 
 {split}
 ____
