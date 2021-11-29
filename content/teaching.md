@@ -8,7 +8,7 @@ menu:
         parent: ""
 ---
 
-# Curso Cosmologia III Escola Jayme Tiomno de Física Teórica
+## Curso Cosmologia III Escola Jayme Tiomno de Física Teórica
 
 Introductory course on cosmology given at the Third “Jayme Tiomno” School on Theoretical Physics, in 2021. This course was taught in Portuguese by me and Dr. Caroline Guandalin, and the videos of the lectures are available on YouTube.
 

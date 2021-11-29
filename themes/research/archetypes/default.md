@@ -8,4 +8,4 @@ menu:
         parent: ""
 ---
 
-# {{ .Name }}
+## {{ .Name }}
