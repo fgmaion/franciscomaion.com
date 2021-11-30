@@ -4,6 +4,7 @@ title = "Francisco Maion"
 theme = "research"
 languageCode = 'en-us'
 relativeURLS = true
+pluralizelisttitles = false
 
 [params]
 author = "Francisco Maion"
