@@ -8,7 +8,7 @@ menu:
         parent: ""
 ---
 
-# Prêmio Vídeo Pós-Graduação 2019
+## Prêmio Vídeo Pós-Graduação 2019
 
 Outreach video explaining my masters work. This work won the prize for best outreach video produced by a graduate student at USP in the area of Exact and Earth Sciences in the year 2019. (In Portuguese)
 
