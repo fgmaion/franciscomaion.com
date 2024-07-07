@@ -3,7 +3,7 @@ baseURL = "https://franciscomaion.com"
 title = "Francisco Maion"
 theme = "research"
 languageCode = 'en-us'
-relativeURLS = true
+relativeURLs = true
 pluralizelisttitles = false
 
 [params]
@@ -31,7 +31,4 @@ sectionPagesMenu = "main"
 
 [menu]
 [[menu.main]]
-identifier = "research"
-title = "Research"
-url = "/research/"
 weight = 200

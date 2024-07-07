@@ -4,7 +4,7 @@ draft: false
 menu:
     main:
         identifier: "contact"
-        weight: 300
+        weight: 100
         parent: ""
 ---
 ## Information

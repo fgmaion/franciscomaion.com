@@ -4,7 +4,7 @@ draft: false
 menu:
     main:
         identifier: "outreach"
-        weight: 200
+        weight: 100
         parent: ""
 ---
 
