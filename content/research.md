@@ -1,11 +1,6 @@
 ---
 title: "Research"
-draft: false
-menu:
-    main:
-        identifier: "research"
-        weight: 90
-        parent: ""
+draft: true
 ---
 
 I am interested in using cosmological simulations to develop models of LSS observables, primarily galaxy clustering and galaxy intrinsic alignments.

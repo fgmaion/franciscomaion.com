@@ -1,6 +1,6 @@
 ---
 title: "Hybrid-Models"
-draft: false
+draft: true
 menu:
     main:
         parent: "research"

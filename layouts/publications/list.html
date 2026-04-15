@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="page-wrap">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+  </div>
+  <div class="page-content">
+    <p class="pub-intro">{{ .Content | safeHTML }}</p>
+    <div class="pub-list">
+      {{ range .Pages.ByWeight }}
+      <details class="pub-card">
+        <summary class="pub-summary">
+          <div class="pub-meta-row">
+            <span class="pub-year">{{ .Params.year }}</span>
+            <span class="pub-journal">{{ .Params.journal }}</span>
+            <span class="pub-expand">
+              <span class="pub-expand-icon">▾</span>
+            </span>
+          </div>
+          <p class="pub-title">{{ .Title }}</p>
+          <p class="pub-authors">{{ .Params.authors | safeHTML }}</p>
+        </summary>
+        <div class="pub-body">
+          {{ .Content }}
+          <div class="pub-links">
+            {{ with .Params.arxiv }}
+            <a href="https://arxiv.org/abs/{{ . }}" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a>
+            {{ end }}
+            {{ with .Params.ads }}
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener noreferrer">NASA ADS</a>
+            {{ end }}
+          </div>
+        </div>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

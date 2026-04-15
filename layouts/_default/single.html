@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page-wrap">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+  </div>
+  {{ $cols := split .Content "{split}" }}
+  {{ if gt (len $cols) 1 }}
+  <div class="split-layout clearfix">
+    {{ range $cols }}
+    <div class="page-content">{{ . | safeHTML }}</div>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="page-content clearfix">
+    {{ .Content | safeHTML }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

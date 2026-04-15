@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="footer-social">
+    {{ range .Site.Params.social }}
+    <a href="{{ .link }}" target="{{ .target | default "_self" }}" title="{{ .title }}" rel="noopener noreferrer">
+      <i class="fab {{ .icon }}"></i>
+    </a>
+    {{ end }}
+  </div>
+  <p>&copy; {{ now.Year }} Francisco Maion</p>
+</footer>

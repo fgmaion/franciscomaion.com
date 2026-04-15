@@ -1,25 +1,19 @@
 {{ define "main" }}
-
-<div class="hero-wrap">
-    <div class="hero-mask opacity-8 bg-dark"></div>
-    <div class="hero-bg parallax" style="background-image:url('/img/Cosmic_Reef.gif');"></div>
-    <div class="hero-content section d-flex fullscreen">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-12 text-center">
-            <div class="typed-strings">
-              <p>I'm Francisco Maion</p>
-              <p>I'm a PhD Student</p>
-              <p>I'm a Physicist</p>
-              <p>I'm a Computational Cosmologist</p>
-            </div>
-            <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
-            <h2 class="text-16 fw-600 text-white mb-2 mb-md-3"><span class="typed"></span></h2>
-            <p class="text-5 text-light mb-4">based in Donostia / San Sebastián - Spain</p>
-            <a href="about" class="btn btn-outline-primary rounded-pill shadow-none mt-2">About Me</a>
-          </div>
-        </div>
+<section class="hero">
+  <div class="hero-layout">
+    <div class="hero-photo">
+      <img src="{{ "img/profile.jpg" | relURL }}" alt="Francisco Maion">
+    </div>
+    <div class="hero-inner">
+      <span class="hero-tag">Welcome</span>
+      <h1 class="hero-title">Hi, I'm <span>Francisco Maion</span></h1>
+      <p class="hero-sub">Postdoc working on Computational Cosmology</p>
+      <p class="hero-loc">Columbia University, New York</p>
+      <div class="hero-actions">
+        <a href="{{ "about" | relURL }}" class="btn btn-primary">About me</a>
+        <a href="{{ "research" | relURL }}" class="btn btn-outline">My research</a>
       </div>
+    </div>
   </div>
-
+</section>
 {{ end }}
